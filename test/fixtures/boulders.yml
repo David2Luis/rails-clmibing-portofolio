@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  boulder_name: MyString
+  category: MyString
+  comment: MyString
+
+two:
+  boulder_name: MyString
+  category: MyString
+  comment: MyString

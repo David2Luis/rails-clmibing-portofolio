@@ -1,0 +1,2 @@
+class YourBd < ApplicationRecord
+end
