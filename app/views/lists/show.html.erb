@@ -1,0 +1,14 @@
+<h1><%= @list.name %></h1>
+
+<% @list.boulders.each do |boulder| %>
+ <h2><%= boulder.name %></h2>
+ <p><%= boulder.category %></p>
+ <p><%= boulder.comment %></p>
+ <%your_bd = Your_bd.find_by(boulder_id: boulder.id) %>
+ <p><%= link_to "🗑 delete",
+              bookmark_path(bookmark),
+              method: :delete,
+              data: { confirm: "Are you sure?" } %></p>
+<% end %>
+<%= link_to "⬅ Back", lists_path, class: 'btn btn-primary' %>
+<%= link_to 'Create a new bookmark', new_list_bookmark_path(@list), class: 'btn btn-primary' %>

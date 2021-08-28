@@ -1,0 +1,2 @@
+class YourBdsController < ApplicationController
+end
